@@ -1,0 +1,3 @@
+<template>
+  Uki
+</template>

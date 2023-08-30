@@ -1,0 +1,81 @@
+body {
+  font-family: 'Inter Tight', Arial, sans-serif;
+}
+
+.instagram-icon {
+	width: 50px;
+}
+
+.nav {
+	position: relative;
+}
+
+.nav:before {
+	content: none;
+	height: 1px;
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav:before {
+		content: "";
+	}
+}
+
+.nav a {
+	position: relative;
+	transition: all 150ms;
+}
+
+.nav a:before, .nav a:after {
+	content: "";
+	height: 0px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	left: -5px;
+	right: -5px;
+	transition: all 150ms;
+}
+
+.nav a:hover {
+	color: white;
+}
+
+.nav a:hover:after {
+	transition: all 150ms;
+	background-color: white;
+	height: 100%;
+	top: 0;
+	background-color: black;
+	z-index: -1;
+}
+
+.nav a.active {
+	color: white;
+}
+
+.nav a.active:after {
+	background-color: white;
+	height: 100%;
+	top: 0;
+	background-color: black;
+	z-index: -1;
+}
+
+
+.nav--sub:before {
+	top: 14px;
+}
+
+.fslightbox-toolbar > div:first-child,
+.fslightbox-slide-number-container {
+	display: none !important;
+}
+
+img {
+	width: 100%;
+}
